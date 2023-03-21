@@ -1,0 +1,1 @@
+W-D simplified lesson.
