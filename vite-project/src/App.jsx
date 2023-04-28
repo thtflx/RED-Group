@@ -1,17 +1,16 @@
 import React from 'react'
-import './App.css'
 import Articles from './Articles'
-import { BrowserRouter as Router, Switch, Route } from 'react-router'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './About'
-import Header from './Header'
+
+
 
 function App() {
 
   return (
     <div style={{padding: '20px 40px'}}>
-      <Header />
-      <Router>
-        <Switch>
+      <BrowserRouter>
+        <Routes>
           <Route path='/' exact={true}>
             <Articles />
           </Route>
@@ -19,8 +18,8 @@ function App() {
           <Route path='/about'>
             <About />
           </Route>
-        </Switch>
-      </Router>
+        </Routes>
+      </BrowserRouter>
 
     </div>
   )
