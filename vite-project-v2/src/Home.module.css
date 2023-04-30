@@ -1,5 +1,6 @@
 .item {
-    border: 2px solid #5d5d5d;
+    border: 2px solid #5d5d5d6c;
+    margin-bottom: 15px;
 }  
 
 .image {
@@ -12,4 +13,22 @@
 
 .info {
     padding: 10px;
+}
+
+
+.info h2 {
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.info button {
+    padding: 5px;
+    background-color: rgb(42, 93, 165);
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
 }
