@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {cars as carsData} from './cars.data.js'
 import CarItem from './CarItem'
 import CreateCarForm from './CreateCarForm.jsx'
@@ -7,6 +7,17 @@ import CreateCarForm from './CreateCarForm.jsx'
 
 const Home = () => {
     const [cars, setCars] = useState(carsData);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch();
+            const request = await response.json();
+
+            setCars(request)
+        }
+
+        fetchData()
+    }, []);
 
     return (
         <div>
