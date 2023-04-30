@@ -1,13 +1,17 @@
-import React from 'react'
-import {cars} from './cars.data.js'
+import React, { useState } from 'react'
+import {cars as carsData} from './cars.data.js'
 import CarItem from './CarItem'
+import CreateCarForm from './CreateCarForm.jsx'
 
 
 
 const Home = () => {
+    const [cars, setCars] = useState(carsData);
+
     return (
         <div>
             <h1>Cars catalog</h1>
+            <CreateCarForm setCars={setCars} />
             <div>
                 {cars.length ? 
                     cars.map((car) => (
