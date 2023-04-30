@@ -14,7 +14,7 @@ const Home = () => {
             const request = await response.json();
 
             setCars(request)
-        }
+        } 
 
         fetchData()
     }, []);
