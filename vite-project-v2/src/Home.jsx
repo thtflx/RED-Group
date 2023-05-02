@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <div>
             <h1>Cars catalog</h1>
-            <CreateCarForm setCars={setCars} />
+            <CreateCarForm setCars={setCars}   />
             <div>
                 {cars.length ? 
                     cars.map((car) => (
