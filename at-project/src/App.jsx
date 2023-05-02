@@ -1,5 +1,4 @@
 import React from 'react'
-import AlwaysMode from './components/AlwaysMode'
 import './App.css'
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <AlwaysMode />
+        t-zone
       </div>
 
     </div>
@@ -15,3 +14,8 @@ function App() {
 }
 
 export default App
+
+
+const fetchData = () => {
+  const request = await fetch();
+}
