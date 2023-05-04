@@ -16,6 +16,3 @@ function App() {
 export default App
 
 
-const fetchData = () => {
-  const request = await fetch();
-}
