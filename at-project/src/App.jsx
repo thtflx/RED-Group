@@ -1,18 +1,7 @@
-import React from 'react'
-import './App.css'
-
-function App() {
-
+export default function App() {
   return (
-    <div className="App">
-      <div>
-        t-zone
-      </div>
-
-    </div>
+    <h1 className="text-3xl font-bold underline bg-slate-500 p-10">
+      Hello world!
+    </h1>
   )
 }
-
-export default App
-
-
